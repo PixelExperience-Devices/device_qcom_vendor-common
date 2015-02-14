@@ -145,6 +145,11 @@
     <string name="menu_delete_list">Delete List</string>
     <string name="alert_dialog_ok">Ok</string>
     <string name="alert_dialog_cancel">Cancel</string>
+
+    <!-- Off messages -->
+    <string name="fm_off">FM is turned off.</string>
+    <string name="fm_call">FM can\'t be used while calling.</string>
+
     <!-- The messsage shown when long pressed on a station. -->
     <string name="alert_dialog_hint">Enter a name</string>
 
