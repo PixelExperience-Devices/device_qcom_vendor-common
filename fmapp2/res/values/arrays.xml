@@ -232,6 +232,7 @@
     <item>Greece</item>
     <item>Hong Kong</item>
     <item>India</item>
+    <item>Indonesia</item>
     <item>Ireland</item>
     <item>Italy</item>
     <item>Korea</item>
@@ -292,6 +293,7 @@
     <item>34</item>
     <item>35</item>
     <item>36</item>
+    <item>37</item>
   </string-array>
 
   <string-array name="regional_band_summary">
@@ -312,6 +314,7 @@
     <item>Greece (87.5MHz To 108.0MHz In 50 Khz Steps)</item>
     <item>Hong Kong (87.5MHz To 108.0MHz In 100 Khz Steps)</item>
     <item>India (91.0MHz To 106.4MHz In 100 Khz Steps)</item>
+    <item>Indonesia (87.5MHz to 108.0MHz in 100 KHz steps)</item>
     <item>Ireland (87.5MHz To 108.0MHz In 50 Khz Steps)</item>
     <item>Italy (87.5MHz To 108.0MHz In 50 Khz Steps)</item>
     <item>Korea (87.5MHz To 108.0MHz In 200 Khz Steps)</item>
