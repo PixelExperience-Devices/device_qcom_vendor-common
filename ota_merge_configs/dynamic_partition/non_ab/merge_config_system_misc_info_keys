@@ -11,3 +11,4 @@ avb_product_add_hashtree_footer_args
 root_dir
 default_system_dev_certificate
 product_fs_type
+system_ext_fs_type
