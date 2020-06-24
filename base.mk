@@ -819,6 +819,12 @@ else
     DELAUN := Launcher3
 endif
 
+#debugApp FDA
+PRODUCT_PACKAGES += FDA
+PRODUCT_PACKAGES += debug.script.rc
+PRODUCT_PACKAGES += init.debug.script.sh
+PRODUCT_PACKAGES += init.myam.sh
+
 PRODUCT_PACKAGES += $(ALSA_HARDWARE)
 PRODUCT_PACKAGES += $(ALSA_UCM)
 PRODUCT_PACKAGES += $(ANGLE)
