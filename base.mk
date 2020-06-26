@@ -819,6 +819,11 @@ else
     DELAUN := Launcher3
 endif
 
+#servicetracker HAL
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2-impl \
+    vendor.qti.hardware.servicetracker@1.2-service
+
 #debugApp FDA
 PRODUCT_PACKAGES += FDA
 PRODUCT_PACKAGES += debug.script.rc
