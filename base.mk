@@ -1100,6 +1100,8 @@ PRODUCT_PACKAGES += libqti_vndfwk_detect.vendor
 PRODUCT_PACKAGES += vndservicemanager
 PRODUCT_PACKAGES += vendor.qti.hardware.iop@2.0.vendor
 PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.0.vendor
+PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.1.vendor
+PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.2.vendor
 
 #soong namespace for qssi vs vendor differentiation
 SOONG_CONFIG_NAMESPACES += qssi_vs_vendor
