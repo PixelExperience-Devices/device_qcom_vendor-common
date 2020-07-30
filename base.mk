@@ -826,6 +826,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.servicetracker@1.2-service
 
+#debugUtils
+PRODUCT_PACKAGES_DEBUG += \
+     vendor.qti.hardware.debugutils@1.0-impl \
+     vendor.qti.hardware.debugutils@1.0-service
+
 #debugApp FDA
 PRODUCT_PACKAGES += FDA
 PRODUCT_PACKAGES += debug.script.rc
