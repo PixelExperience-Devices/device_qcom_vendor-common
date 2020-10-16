@@ -826,9 +826,9 @@ PRODUCT_PACKAGES += \
 
 #debugApp FDA
 PRODUCT_PACKAGES += FDA
-PRODUCT_PACKAGES += debug.script.rc
-PRODUCT_PACKAGES += init.debug.script.sh
-PRODUCT_PACKAGES += init.myam.sh
+PRODUCT_PACKAGES += fda.script.rc
+PRODUCT_PACKAGES += init.fda.script.sh
+PRODUCT_PACKAGES += init.fda.am.sh
 
 PRODUCT_PACKAGES += $(ALSA_HARDWARE)
 PRODUCT_PACKAGES += $(ALSA_UCM)
