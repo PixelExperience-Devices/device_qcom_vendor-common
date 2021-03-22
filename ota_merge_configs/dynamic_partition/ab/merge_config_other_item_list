@@ -3,6 +3,8 @@ IMAGES/vendor.img
 IMAGES/vendor_dlkm.img
 META/boot_filesystem_config.txt
 META/file_contexts.bin
+META/kernel_configs.txt
+META/kernel_version.txt
 META/otakeys.txt
 META/releasetools.py
 META/vendor_filesystem_config.txt
