@@ -1,5 +1,5 @@
 # define flag to determine the kernel
-TARGET_KERNEL_VERSION ?= $(shell ls -1r kernel | grep "msm-*" | sed 's/msm-//' | head -1)
+TARGET_KERNEL_VERSION ?= $(subst /,,$(subst kernel/msm-,,$(dir $(wildcard kernel/msm-*/))))
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 
@@ -1085,6 +1085,10 @@ PRODUCT_PACKAGES += libvndfwk_detect_jni.qti
 PRODUCT_PACKAGES += libqti_vndfwk_detect
 PRODUCT_PACKAGES += libvndfwk_detect_jni.qti.vendor
 PRODUCT_PACKAGES += libqti_vndfwk_detect.vendor
+PRODUCT_PACKAGES += libqti_vndfwk_detect_system
+PRODUCT_PACKAGES += libqti_vndfwk_detect_vendor
+PRODUCT_PACKAGES += libvndfwk_detect_jni.qti_system
+PRODUCT_PACKAGES += libvndfwk_detect_jni.qti_vendor
 PRODUCT_PACKAGES += vndservicemanager
 PRODUCT_PACKAGES += vendor.qti.hardware.iop@2.0.vendor
 PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.0.vendor
