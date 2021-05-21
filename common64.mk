@@ -4,7 +4,7 @@ $(call inherit-product, device/qcom/vendor-common/base.mk)
 # Since we want use QC specific files, we should inherit
 # device-vendor.mk first to make sure QC specific files gets installed.
 $(call inherit-product-if-exists, $(QCPATH)/common/config/device-vendor-qssi.mk)
-ifeq ($(TARGET_PRODUCT), kalama)
+ifeq ($(TARGET_BOARD_PLATFORM), kalama)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
