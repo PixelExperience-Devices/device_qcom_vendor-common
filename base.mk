@@ -1096,10 +1096,11 @@ PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.1.vendor
 PRODUCT_PACKAGES += vendor.qti.hardware.perf@2.2.vendor
 
 SOONG_CONFIG_NAMESPACES += vendor_clean_up_java
-SOONG_CONFIG_vendor_clean_up_java += config output file
+SOONG_CONFIG_vendor_clean_up_java += config output file allowlist
 SOONG_CONFIG_vendor_clean_up_java_config := $(CLEAN_UP_JAVA_IN_VENDOR)
 SOONG_CONFIG_vendor_clean_up_java_output := $(abspath out/target/product/)
 SOONG_CONFIG_vendor_clean_up_java_file := configs/vendor_java_soong_violator.txt
+SOONG_CONFIG_vendor_clean_up_java_allowlist := $(JAVA_IN_VENDOR_SOONG_WHITE_LIST)
 
 #soong namespace for qssi vs vendor differentiation
 SOONG_CONFIG_NAMESPACES += qssi_vs_vendor
