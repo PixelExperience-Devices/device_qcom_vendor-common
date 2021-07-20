@@ -1,4 +1,4 @@
-cc_library_shared {
+/*cc_library_shared {
     name: "memtrack.default",
     relative_install_path: "hw",
     vendor: true,
@@ -16,4 +16,4 @@ cc_library_shared {
         "memtrack_msm.c",
         "kgsl.c",
     ],
-}
+}*/
