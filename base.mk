@@ -818,6 +818,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.servicetracker@1.2-service
 
+#memtrack HAL
+#PRODUCT_PACKAGES += \
+#    android.hardware.memtrack@1.0-impl \
+#    android.hardware.memtrack@1.0-service \
+#    memtrack.default
+
 #debugApp FDA
 PRODUCT_PACKAGES += FDA
 PRODUCT_PACKAGES += debug.script.rc
@@ -934,7 +940,8 @@ PRODUCT_PACKAGES_DEBUG := init.qcom.testscripts.sh
 #DebugUtils HAL
 PRODUCT_PACKAGES_DEBUG += \
     vendor.qti.hardware.debugutils@1.0-impl \
-    vendor.qti.hardware.debugutils@1.0-service
+    vendor.qti.hardware.debugutils@1.0-service \
+    PerfettoConfig.cfg
 
 #Add init.qcom.test.rc to PRODUCT_PACKAGES_DEBUG list
 PRODUCT_PACKAGES_DEBUG += init.qcom.test.rc
