@@ -818,11 +818,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.servicetracker@1.2-service
 
-#memtrack HAL
+# memtrack HAL
+# Uncomment the following two lines to enable memtrack hal
+
 #PRODUCT_PACKAGES += \
-#    android.hardware.memtrack@1.0-impl \
-#    android.hardware.memtrack@1.0-service \
-#    memtrack.default
+#    vendor.qti.hardware.memtrack-service
 
 #debugApp FDA
 PRODUCT_PACKAGES += FDA
