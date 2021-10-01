@@ -10,6 +10,10 @@ else
 TARGET_USES_NEW_ION := true
 endif
 
+ifneq (true,$(BUILDING_WITH_VSDK))
+    PRODUCT_SOONG_NAMESPACES += frameworks/base/boot
+endif
+
 # Board platforms lists to be used for
 # TARGET_BOARD_PLATFORM specific featurization
 QCOM_BOARD_PLATFORMS += msm8974
