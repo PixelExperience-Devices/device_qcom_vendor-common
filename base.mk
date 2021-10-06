@@ -12,6 +12,7 @@ endif
 
 ifneq (true,$(BUILDING_WITH_VSDK))
     PRODUCT_SOONG_NAMESPACES += frameworks/base/boot
+    PRODUCT_SOONG_NAMESPACES += cts/tests/signature/api-check
 endif
 
 # Board platforms lists to be used for
