@@ -10,6 +10,10 @@ else
 TARGET_USES_NEW_ION := true
 endif
 
+ifneq (true,$(BUILDING_WITH_VSDK))
+    PRODUCT_SOONG_NAMESPACES += frameworks/base/boot
+endif
+
 # Board platforms lists to be used for
 # TARGET_BOARD_PLATFORM specific featurization
 QCOM_BOARD_PLATFORMS += msm8974
@@ -818,11 +822,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     vendor.qti.hardware.servicetracker@1.2-service
 
-#memtrack HAL
+# memtrack HAL
+# Uncomment the following two lines to enable memtrack hal
+
 #PRODUCT_PACKAGES += \
-#    android.hardware.memtrack@1.0-impl \
-#    android.hardware.memtrack@1.0-service \
-#    memtrack.default
+#    vendor.qti.hardware.memtrack-service
 
 #debugApp FDA
 PRODUCT_PACKAGES += FDA
@@ -950,6 +954,7 @@ PRODUCT_PACKAGES_DEBUG += init.qcom.debug.sh
 #NANOPB_LIBRARY_NAME := libnanopb-c-2.8.0
 
 PRODUCT_COPY_FILES := \
+    frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml\
