@@ -830,10 +830,12 @@ endif
 #    vendor.qti.hardware.memtrack-service
 
 #debugApp FDA
+ifneq ($(TARGET_USES_QSPA),true)
 PRODUCT_PACKAGES += FDA
 PRODUCT_PACKAGES += fda.script.rc
 PRODUCT_PACKAGES += init.fda.script.sh
 PRODUCT_PACKAGES += init.fda.am.sh
+endif
 
 PRODUCT_PACKAGES += $(ALSA_HARDWARE)
 PRODUCT_PACKAGES += $(ALSA_UCM)
