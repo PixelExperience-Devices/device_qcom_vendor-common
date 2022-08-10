@@ -1069,8 +1069,13 @@ else
 endif
 
 ifeq ($(TARGET_HAS_LOW_RAM),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        persist.vendor.qcomsysd.enabled=0
+    ifeq ($(TARGET_USES_QSPA),true)
+        PRODUCT_PROPERTY_OVERRIDES += \
+            persist.vendor.qcomsysd.enabled=1
+    else
+        PRODUCT_PROPERTY_OVERRIDES += \
+            persist.vendor.qcomsysd.enabled=0
+    endif
 else
     PRODUCT_PROPERTY_OVERRIDES += \
         persist.vendor.qcomsysd.enabled=1
