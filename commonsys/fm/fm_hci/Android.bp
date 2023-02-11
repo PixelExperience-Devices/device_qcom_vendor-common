@@ -18,7 +18,7 @@ cc_library_shared {
     cflags: ["-Wno-unused-parameter"],
 
     include_dirs: [
-        "vendor/qcom/opensource/commonsys/fm/helium",
+        "device/qcom/vendor-common/commonsys/fm/helium",
     ],
 
     system_ext_specific: true,

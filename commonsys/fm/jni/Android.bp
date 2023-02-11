@@ -17,7 +17,7 @@ cc_library_shared {
 
     include_dirs: [
         "vendor/qcom/opensource/commonsys-intf/bluetooth/include",
-        "vendor/qcom/opensource/commonsys/fm/helium",
+        "device/qcom/vendor-common/commonsys/fm/helium",
     ],
 
 }
