@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 
+/*
+ * Changes from Qualcomm Innovation Center are provided under the following
+ * license:
+ * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
 #pragma once
 
 #include <aidl/android/hardware/memtrack/BnMemtrack.h>
